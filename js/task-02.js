@@ -8,6 +8,9 @@ const ingredients = [
 ];
 
 const newList = document.createElement("li");
-newList.textContent = `${ingredients[0]}`;
-newList.classList.add("item");
-console.log(newList);
+// const newListElem = [];
+ingredients.forEach((id) => {
+  newList.textContent = `${ingredients}`;
+  newList.classList.add("item");
+  console.log(newList);
+});
