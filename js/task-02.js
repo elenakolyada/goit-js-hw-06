@@ -7,10 +7,14 @@ const ingredients = [
   "Condiments",
 ];
 
-const newList = document.createElement("li");
-// const newListElem = [];
-ingredients.forEach((id) => {
-  newList.textContent = `${ingredients}`;
+const navEl = document.querySelector(`ul`);
+
+const elements = ingredients.map((option) => {
+  const newList = document.createElement("li");
+  newList.textContent = `${option}`;
   newList.classList.add("item");
-  console.log(newList);
+  return newList;
 });
+console.log(elements);
+
+navEl.append(...elements);
