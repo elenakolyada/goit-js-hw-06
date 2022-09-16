@@ -19,7 +19,7 @@ navEl.style.display = `flex-wrap: wrap`;
 const elementsGallery = images
   .map(
     (gallery) =>
-      `<li><img src=${gallery.url} alt=${gallery.alt}; width=100% height=100%><li>`
+      `<li class ="galery-item"><img src="${gallery.url}" alt="${gallery.alt}"; width=100% height=100%></li>`
   )
   .join(``);
 
